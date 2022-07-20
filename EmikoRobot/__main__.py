@@ -82,28 +82,26 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+Koro Sensei is always ready to server you master.  [❤️](https://telegra.ph//file/8fdcf028a59b28a660e99.mp4)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+✪ Hit /help to see my available commands and then see my magic.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+         InlineKeyboardButton(
+                             text="Powered By",
+                             url=f"https://t.me/Anime_Classrooms"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Updates", url=f"t.me/KoroSensei_AC"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Me To Your Group ➗", url=f"t.me/KoroXSensei_Bot?startgroup=true"),
     ],
 ]
 
